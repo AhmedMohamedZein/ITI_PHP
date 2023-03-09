@@ -35,6 +35,7 @@ if ( !empty($_POST) ) {
         $success = _THANK_YOU_MESSAGE_ ; 
         write_to_file();
         require_once('views/welcome.php');
+        exit();
     }
 }
 

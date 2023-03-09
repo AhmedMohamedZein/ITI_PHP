@@ -2,8 +2,7 @@ body {
     background-color: #698269 !important;
 }
 
-#show {
-    /* border-radius: 7px; */
+.show {
     width: 55vh;
     background-color: #F1DBBF;
     display: flex;
@@ -19,10 +18,9 @@ body {
 
 main {
     display: flex !important;
-    flex-wrap: wrap !important;
+    flex-direction: column !important;
 }
 
 span {
-
     background-color: white;
 }
