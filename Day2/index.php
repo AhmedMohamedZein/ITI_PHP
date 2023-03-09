@@ -1,7 +1,7 @@
 <?php
 
 require_once("config.php");
-
+require_once('functions.php');
 $errors = [];
 $success= "";
 if ( !empty($_POST) ) {
@@ -33,8 +33,9 @@ if ( !empty($_POST) ) {
     //  no errors
     if ( !$errors ) {
         $success = _THANK_YOU_MESSAGE_ ; 
+        write_to_file();
+        require_once('views/welcome.php');
     }
 }
-
 
 require_once("views/contact.php");
