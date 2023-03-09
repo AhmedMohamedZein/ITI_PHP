@@ -10,7 +10,7 @@ if ( !empty($_POST) ) {
     $message = $_POST["message"];
     if ( !empty($name) ){
         // check if the name is more than 100 character
-        if (strlen($name) >= $MAX_CHAR_NAME){
+        if (strlen($name) >= _MAX_CHAR_NAME_){
             $error .= "invalid name is more than 100 character !"."<br>";
         } 
     } else {
@@ -25,7 +25,7 @@ if ( !empty($_POST) ) {
     } else {
         $error .= "invalid your email is empty!"."<br>";
     }
-    if ( empty($message) && strlen ( $message ) <= $MAX_CHR_TEXT_AREA  ) {
+    if ( empty($message) && strlen ( $message ) <= _MAX_CHR_TEXT_AREA_  ) {
         $error .= "invalid message body is empty!";
 
     }
@@ -36,7 +36,7 @@ if ( !empty($_POST) ) {
 
 // no error 
 if ( empty($error) ) {
-    $success .= $THANK_YOU_MESSAGE ; 
+    $success .= _THANK_YOU_MESSAGE_ ; 
 }
 
 require_once("webpages/main.php");

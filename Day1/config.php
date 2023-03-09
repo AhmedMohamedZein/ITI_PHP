@@ -1,5 +1,6 @@
 <?php
 
-$MAX_CHR_TEXT_AREA = 255 ;
-$MAX_CHAR_NAME = 100 ; 
-$THANK_YOU_MESSAGE = "Thank you for contacting Us";
+
+define("_MAX_CHR_TEXT_AREA_",255);
+define("_MAX_CHAR_NAME_",100);
+define("_THANK_YOU_MESSAGE_","Thank you for contacting Us");
