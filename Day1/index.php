@@ -29,14 +29,11 @@ if ( !empty($_POST) ) {
         $error .= "invalid message body is empty!";
 
     }
-
-} else {
-    $error = " ";
+    // no error 
+    if ( empty($error) ) {
+        $success .= _THANK_YOU_MESSAGE_ ; 
 }
+} 
 
-// no error 
-if ( empty($error) ) {
-    $success .= _THANK_YOU_MESSAGE_ ; 
-}
 
-require_once("webpages/main.php");
+require_once("views/main.php");
