@@ -1,0 +1,9 @@
+# Vendor folder
+vendor
+
+# Configuration file
+config.php
+
+# DataBase 
+
+items.sql
