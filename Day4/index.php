@@ -1,7 +1,6 @@
 <?php
 require('vendor/autoload.php');
 
-
 // here we will make the routes like an entery point euch request will pass through here 
 
 $requestURL = $_SERVER["REQUEST_URI"];
@@ -11,7 +10,6 @@ $errors = NULL;
 
 // the third item $parseURL --> { empty , ? , index.php } will be the root
 // any request will be in the form of localhost/webServices/index.php/resourses/resoursesID
-
 
 
 if ( isset ($parseURL[4]) ) {

@@ -8,7 +8,7 @@
     <title>Show Glasses</title>
 </head>
 <body style="background-color: #61764B; height: 100vh;" class="d-flex justify-content-center align-items-center">
-    <main style="background-color: #CFB997; width: 80vh; height: 45vh; border-radius: 30px;" class="d-flex gap-2">
+    <main style="background-color: #CFB997; width: 80vh; height: 45vh; border-radius: 30px;" class="d-flex gap-5">
         <div class="d-flex flex-column" style="padding: 30px;">
             <ul style="list-style: none;" class="d-flex flex-column gap-3">
                 <li class="d-flex flex-column">
@@ -29,11 +29,9 @@
                 </li>
             </ul>
         </div>
-        <div>
-           <?php
-                // $imge 
-           ?>
-        </div>
+        <div class="mt-4">
+            <img width="300vh" src="/php/Day4/images/<?php echo $result[0][3] ?>" alt="">
+        </div> 
     </main>
 </body>
 </html>
