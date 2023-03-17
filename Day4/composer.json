@@ -1,8 +1,5 @@
 {
-    "require": {
-        "voku/simple-mysqli": "8.*"
-    },
     "autoload": {
-        
+        "files": ["routes/glassesRoute.php","controllers/GlassesController.php", "modules/Glasses.php" , "config.php"]
     }
 }
