@@ -51,8 +51,8 @@
         </table>
     </main>
     <div class="mt-3 d-flex gap-4">
-        <button>Previous</button>
-        <button>Next</button>
+        <a href="<?php echo $_SERVER["PHP_SELF"].'?recordNumber='.$previous_index?>"><button>Previous</button></a>
+        <a href="<?php echo $_SERVER["PHP_SELF"].'?recordNumber='.$next_index?>"><button>Next</button></a>
     </div>
 </body>
 </html>

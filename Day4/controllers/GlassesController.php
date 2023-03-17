@@ -11,14 +11,14 @@ class GlassesController {
         $this->_glassesModule = new Glasses('items');
     }
 
-    public function getGlasses ($id = NULL) {
+    public function getGlasses ($id = NULL , $array = array() , $start = 0) {
         // get from the GlassesController
         try {
             if ( isset($id) ) {
                 $result =  $this->_glassesModule->getDataById( 'id' , $id) ;
             }
             else {
-                $result =  $this->_glassesModule->getData() ;
+                $result =  $this->_glassesModule->getData( $array , $start) ;
             }
         }catch (Exception $exception){
             http_response_code(500);

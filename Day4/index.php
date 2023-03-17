@@ -1,6 +1,5 @@
 <?php
 require('vendor/autoload.php');
-
 // here we will make the routes like an entery point euch request will pass through here 
 
 $requestURL = $_SERVER["REQUEST_URI"];
